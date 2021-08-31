@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <form methods="GET" action="{{ url_for('signin')}}">
+        <label for="name">nom</label>
+        <input type="text" id="name" name="nom">
+        <label for="prenom">prenom:</label>
+        <input type="text" id="prenom" name="prenom">
+        <label for="age">age:</label>
+        <input type="text" id="age" name="age"> 
+        <p><button type=" submit"> Envoyer </button> </button></p>
+    </form>
+</div>
+</body>
+</html>

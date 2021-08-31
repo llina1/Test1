@@ -1,0 +1,26 @@
+strong{
+    font-size: 2em;
+    color:rgb(9, 134, 40);
+    text-align: center;
+} 
+.divider:after,
+.divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: rgb(238, 24, 24);
+}
+.h-custom {
+  height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+  .h-custom {
+    height: 100%;
+  }
+} 
+
+
+body{
+    background-color: rgb(202, 241, 218);
+    color: rgb(10, 10, 10)
+} 

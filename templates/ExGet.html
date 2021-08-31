@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page1</title>
+    <link rel="stylesheet" type="text/css" href={{url_for('static',filename='style.css')}} ">
+    
+</head>
+
+<body>
+    <div>
+        <p> Bienvenu</p>
+    </div>
+    <form method="" action="{{ url_for(signin)}}">
+        <label for="name">nom</label>
+        <input type="text" id="name" name="nom">
+        <label for="prenom">prenom:</label>
+        <input type="text" id="prenom" name="prenom">
+        <!-- <label for="age">age:</label>
+        <input type="text" id="age" name="age"> -->
+        <p><button type=" submit"> Envoyer </button> </button></p>
+    </form>
+
+    <div> <a href="{{ url_for('page2')}}"> Aller à la page </a></div>
